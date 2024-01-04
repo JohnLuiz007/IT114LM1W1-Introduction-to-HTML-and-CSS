@@ -1,4 +1,9 @@
 .center-text {
+    text-align: center;
+    color: red;
+    font-weight: 700;
+    font-size: large;
+    text-decoration: underline;
     /* TODO 3.1: Align the text center or right */
 
     /* TODO 3.2: Change the color of the font to your favorite color */
@@ -12,6 +17,11 @@
 }
 
 .paragraph-style {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 200%;
+    
+
     /* TODO 3.6: Make the font italic */
     
     /* TODO 3.7: Change the font to  */
@@ -21,6 +31,9 @@
 }
 
 .box {
+    width: 500px;
+    background-color: rgba(0, 0, 255, 0.5);
+    margin: 5%, 10%, 10%, 20%;
     /* TODO 3.9: Set the width and height of the div. Try out the different units of HTML. px, em, %, in, rem  */
     
     /* TODO 3.10: Change the background color fo the div. Can you find a way to make the background color 50% transparent? */
