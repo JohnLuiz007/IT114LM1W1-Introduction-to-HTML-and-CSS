@@ -1,13 +1,99 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="test_ground.css">
+        <meta charset = "UTF-8">
+       
+    </head>
+    <body>
+        <div class="activity-container">  
+            <input type = "text" name="first_name" placeholder="Enter first name: ">
+            <input type = "text" name="last_name" placeholder="Enter last name: " required>
+            <input type="text" name="email" value="2022jlmgonzaga@live.mcl.edu.ph" readonly>
+            <input type = "text" name="address" value="address" disabled>
+            <select name="year_level">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">First Year</option>
+                <option value="2">Second Year</option>
+                <option value="3">Third Year</option>
+                <option value="4">Fourth Year</option>
+            </select>
 
-<head>
-    <title>HTML Form Tags</title>
-</head>
 
-<body>
-    <h1>HTML Form Example</h1>
-    <!-- TODO 2.1: Add the container for the form. It should POST to "/submit_form"  -->
+            <div class = "learning_modes">
+                <h1>Enter your prefferd learning mode</h1>
+                <input type="radio" id="F2f" name="mode" value="F2f">
+                <label for="F2f"> Face to Face</label><br>
+
+                <input type="radio" id="Online" name="mode" value="Online">
+                <label for="Online"> Online</label><br>
+
+               
+            </div>
+            <style>
+                .learning_modes {
+                  border-bottom: 20px solid transparent; /* Adds space as a transparent border */
+                }
+              </style>
+
+
+            <div class = "radio_buttons">
+                <h1>Enter your year</h1>
+                <input type="radio" id="First Year" name="year" value="First year">
+                <label for="First Year"> First Year</label><br>
+
+                <input type="radio" id="Second Year" name="year" value="Second year">
+                <label for="Second Year"> Second Year</label><br>
+
+                <input type="radio" id="Third Year" name="year" value="Third year">
+                <label for="Third Year"> Third Year</label><br>
+
+                <input type="radio" id="Fourth Year" name="year" value="Fourth year">
+                <label for="Fourth Year"> Fourth Year</label><br>
+            </div>
+            <style>
+                .radio_buttons {
+                  border-bottom: 20px solid transparent; /* Adds space as a transparent border */
+                }
+            </style>
+    
+
+            <div class = "checkbox">
+                <h1>Enter taken subjects</h1>
+                <input type="checkbox" id="DSA" name="year" value="DSA">
+                <label for="First Year"> Data Structures and Algorithms</label><br>
+
+                <input type="checkbox" id="OOP" name="year" value="OOP">
+                <label for="Second Year"> Concepts of Object Oriented Programming</label><br>
+
+                <input type="checkbox" id="CPC" name="year" value="CPC">
+                <label for="Third Year"> Computer Programming Concepts</label><br>
+
+                <input type="checkbox" id="DiffCal" name="year" value="DiffCal">
+                <label for="Fourth Year"> Differential Calculus</label><br>
+
+            </div>
+            <div class = choice>
+                <h1> Cactus or Shark</h1>
+                <textarea id="choice" name="choice" rows="4" cols="40">
+                  </textarea>   
+            </div>
+            <style>
+                .choice {
+                  border-top: 20px solid transparent; /* Adds space as a transparent border */;
+                }
+              </style>
+
+              <div class = "submit">
+                <input type="button" value="Submit">
+              </div>
+        
+        </div> 
+        
+    </body>
+</html>
+
+<!-- TODO 2.1: Add the container for the form. It should POST to "/submit_form"  -->
     
         <!-- TODO 2.2: Add a first name text field -->
 
@@ -26,7 +112,3 @@
         <!-- TODO 2.9: Add a text area that asks the user if they would prefer to be a cactus or a shark -->
 
         <!-- TODO 2.10: Add a submit button -->
-
-</body>
-
-</html>
